@@ -1,9 +1,13 @@
 // *  define API in here
 
 export const API_URL = {
-  SERVER: "http://localhost",
+  // DUMMY WILL DELETE
+  SERVER: "https://jsonplaceholder.typicode.com",
   COURSES: {
     SEARCH: "",
+  },
+  TODOS: {
+    SEARCH: "/todos",
   },
 };
 

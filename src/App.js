@@ -1,7 +1,11 @@
 import React from "react";
-
+import Todos from "./pages/Todos/Todos";
 const App = () => {
-  return <h1>Hello</h1>;
+  return (
+    <>
+      <Todos />
+    </>
+  );
 };
 
 export default App;
