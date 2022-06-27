@@ -145,24 +145,24 @@ class EvaluateForm extends React.Component {
         <div className="info">
             <div className="infomation">
                 <h5>
-                    Giảng viên:
+                    Giảng viên: Lê Văn Hoàng
                 </h5>
             </div>
             <div className="infomation">
                 <h5>
-                    Mã số nhân sự:
+                    Mã số nhân sự: DTH125
                 </h5>
             </div>
         </div>
         <div className="info">
             <div className="infomation">
                 <h5>
-                    Bộ môn: 
+                    Bộ môn: Kiểm thử bảo mật
                 </h5>
             </div>
             <div className="infomation">
                 <h5>
-                    Khoa:
+                    Khoa: Công nghệ
                 </h5>
             </div>
         </div>
@@ -180,6 +180,8 @@ class EvaluateForm extends React.Component {
                                         <th rowspan="2">GV tự đánh giá
                                         </th>
                                         <th rowspan="2">Xác nhận của HĐ
+                                        </th>
+                                        <th rowspan="2">Bằng chứng
                                         </th>
                                     </tr>
                                     <tr>
@@ -199,7 +201,7 @@ class EvaluateForm extends React.Component {
                                 </thead>
                                 <tbody>                                         
                                     <tr>
-                                        <td colspan="10">
+                                        <td colspan="11">
                                             <strong>
                                                 A. Năng lục chuyên môn(60 điểm)</strong>
                                         </td>
@@ -208,7 +210,7 @@ class EvaluateForm extends React.Component {
                                         <th>
                                             1
                                         </th>
-                                        <td colspan="9">
+                                        <td colspan="10">
                                             <strong>
                                                 Kiến thức, kỹ năng chuyên môn và Đạo đức nghề nghiệp (20 điểm)</strong>
                                         </td>
@@ -242,6 +244,9 @@ class EvaluateForm extends React.Component {
                                         </td>
                                         <td>   
                                         </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
+                                        </td>
                                     </tr>
                                                 
                                     <tr>
@@ -272,6 +277,9 @@ class EvaluateForm extends React.Component {
                                         <td>
                                         </td>
                                         <td>   
+                                        </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
                                         </td>
                                     </tr>
                                                 
@@ -304,6 +312,9 @@ class EvaluateForm extends React.Component {
                                         </td>
                                         <td>   
                                         </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
+                                        </td>
                                     </tr>
                                                 
                                     <tr>
@@ -331,6 +342,9 @@ class EvaluateForm extends React.Component {
                                         </td>
                                         <td>   
                                         </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
+                                        </td>
                                     </tr>
 
                                     <tr>
@@ -356,7 +370,7 @@ class EvaluateForm extends React.Component {
                                         <th>
                                             2
                                         </th>
-                                        <td colspan="9">
+                                        <td colspan="10">
                                             <strong>
                                                 Năng lực dạy học (40 điểm)</strong>
                                         </td>
@@ -390,6 +404,9 @@ class EvaluateForm extends React.Component {
                                         </td>
                                         <td>   
                                         </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
+                                        </td>
                                     </tr>
                                                 
                                     <tr>
@@ -419,6 +436,9 @@ class EvaluateForm extends React.Component {
                                         <td>
                                         </td>
                                         <td>   
+                                        </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
                                         </td>
                                     </tr>
                                                 
@@ -450,6 +470,9 @@ class EvaluateForm extends React.Component {
                                         </td>
                                         <td>   
                                         </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
+                                        </td>
                                     </tr>
                                                 
                                     <tr>
@@ -480,6 +503,9 @@ class EvaluateForm extends React.Component {
                                         </td>
                                         <td>   
                                         </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -508,6 +534,9 @@ class EvaluateForm extends React.Component {
                                         <td>
                                         </td>
                                         <td>   
+                                        </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
                                         </td>
                                     </tr>
                                     <tr>
@@ -538,6 +567,9 @@ class EvaluateForm extends React.Component {
                                         </td>
                                         <td>   
                                         </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -566,6 +598,9 @@ class EvaluateForm extends React.Component {
                                         <td>
                                         </td>
                                         <td>   
+                                        </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
                                         </td>
                                     </tr>
                                     <tr>
@@ -596,6 +631,9 @@ class EvaluateForm extends React.Component {
                                         </td>
                                         <td>   
                                         </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -624,6 +662,9 @@ class EvaluateForm extends React.Component {
                                         <td>
                                         </td>
                                         <td>   
+                                        </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
                                         </td>
                                     </tr>
                                     <tr>
@@ -654,6 +695,9 @@ class EvaluateForm extends React.Component {
                                         </td>
                                         <td>   
                                         </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -674,7 +718,7 @@ class EvaluateForm extends React.Component {
                                         </td>
                                     </tr> 
                                     <tr>
-                                        <td colspan="10">
+                                        <td colspan="11">
                                             <strong>
                                                 B. NGHIÊN CỨU KHOA HỌC(20 điểm)</strong>
                                         </td>
@@ -707,6 +751,9 @@ class EvaluateForm extends React.Component {
                                         </td>
                                         <td>   
                                         </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
+                                        </td>
                                     </tr>     
                                     <tr>
                                         <td>
@@ -735,6 +782,9 @@ class EvaluateForm extends React.Component {
                                         <td>
                                         </td>
                                         <td>   
+                                        </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
                                         </td>
                                     </tr> 
                                     <tr>
@@ -765,6 +815,9 @@ class EvaluateForm extends React.Component {
                                         </td>
                                         <td>   
                                         </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
+                                        </td>
                                     </tr> 
                                     <tr>
                                         <td>
@@ -793,6 +846,9 @@ class EvaluateForm extends React.Component {
                                         <td>
                                         </td>
                                         <td>   
+                                        </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
                                         </td>
                                     </tr> 
                                     <tr>
@@ -823,6 +879,9 @@ class EvaluateForm extends React.Component {
                                         </td>
                                         <td>   
                                         </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
+                                        </td>
                                     </tr> 
                                     <tr>
                                         <td>
@@ -843,7 +902,7 @@ class EvaluateForm extends React.Component {
                                         </td>
                                     </tr>     
                                     <tr>
-                                        <td colspan="10">
+                                        <td colspan="11">
                                             <strong>
                                                 C. CÔNG TÁC CỦA TRƯỞNG/KHOA(20 điểm)</strong>
                                         </td>
@@ -876,6 +935,9 @@ class EvaluateForm extends React.Component {
                                         </td>
                                         <td>   
                                         </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
+                                        </td>
                                     </tr>     
                                     <tr>
                                         <td>
@@ -904,6 +966,9 @@ class EvaluateForm extends React.Component {
                                         <td>
                                         </td>
                                         <td>   
+                                        </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
                                         </td>
                                     </tr> 
                                     <tr>
@@ -934,6 +999,9 @@ class EvaluateForm extends React.Component {
                                         </td>
                                         <td>   
                                         </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
+                                        </td>
                                     </tr> 
                                     <tr>
                                         <td>
@@ -963,6 +1031,9 @@ class EvaluateForm extends React.Component {
                                         </td>
                                         <td>   
                                         </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
+                                        </td>
                                     </tr> 
                                     <tr>
                                         <td>
@@ -991,6 +1062,9 @@ class EvaluateForm extends React.Component {
                                         <td>
                                         </td>
                                         <td>   
+                                        </td>
+                                        <td className="upload">
+                                            <img className="logo" src={require('../../pages/Photo/Upload.png')} width="30px" height="30px" />
                                         </td>
                                     </tr> 
                                     <tr>
