@@ -1,0 +1,29 @@
+.ktop{
+  height: 40px;
+  position: relative;
+  background: none repeat scroll 0 0 #007ACC;
+}
+
+.ktop .logo{
+  float: left;
+  width: 40px;
+  padding-left: 10px;
+}
+.ktop h1{
+  padding-bottom: 5px;
+  padding: auto;
+  font-size: 16px;
+  color: #f5f5f5;
+}
+img{
+  border: 0;
+}
+
+.ktop .clear{
+  background-color: white;
+  
+}
+
+div{
+  display: block;
+}

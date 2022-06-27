@@ -1,10 +1,10 @@
 import React from "react";
-import Login from "./pages/LoginForm/LoginForm";
+import MainForm from "./pages/MainPage";
 import Todos from "./pages/Todos/Todos";
 const App = () => {
   return (
     <>
-      <Login/>
+      <MainForm/>
     </>
   );
 };
