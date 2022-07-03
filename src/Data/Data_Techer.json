@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Nguyễn Thị liệu",
+        "year": 2022,
+        "faculty" : "Công nghệ",
+        "semester" : 1,
+        "point": 60,
+        "status": 1
+    },
+    {
+        "name": "Nguyễn Thị liệu",
+        "year": 2022,
+        "faculty" : "Công nghệ",
+        "semester" : 2,
+        "point": 60,
+        "status": 2
+    },
+    {
+        "name": "Nguyễn Thị liệu",
+        "year": 2022,
+        "faculty" : "Công nghệ",
+        "semester" : 3,
+        "point": 60,
+        "status": 2
+    },
+    {
+        "name": "Nguyễn Thị liệu",
+        "year": 2022,
+        "faculty" : "Công nghệ",
+        "semester" : 3,
+        "point": 60,
+        "status": 0
+    },
+    {
+        "name": "Nguyễn Thị liệu",
+        "year": 2022,
+        "faculty" : "Công nghệ",
+        "semester" : 1,
+        "point": 60,
+        "status": 0
+    },
+    {
+        "name": "Nguyễn Thị Loan",
+        "year": 2021,
+        "faculty" : "Công nghệ",
+        "semester" : 1,
+        "point": 60,
+        "status": 0
+    }
+
+]

@@ -1,10 +1,12 @@
 import React from "react";
-import MainForm from "./pages/MainPage";
+import Adminitrators from "./pages/Administrators/Administrators";
+//import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
+//import MainForm from "./pages/MainPage";
 import Todos from "./pages/Todos/Todos";
 const App = () => {
   return (
     <>
-      <MainForm/>
+     <Adminitrators/>
     </>
   );
 };

@@ -1,0 +1,142 @@
+[
+    {
+        "evaluate": "Trình độ chuyên môn",
+        "sub0" : 0,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 1,
+        "evidence" : 1
+    },
+    {
+        "evaluate": "Kỹ năng chuyên môn",
+        "sub0" : 1,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 1,
+        "evidence" : 1
+    },
+    {
+        "evaluate": "Cập nhật kiến thức chuyên môn",
+        "sub0" : 1,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 1,
+        "evidence" : 0
+    },
+    {
+        "evaluate": "Đạo đức nghề nghiệp",
+        "sub0" : 1,
+        "sub1" : 0,
+        "sub2" : 0,
+        "sub3" : 0,
+        "sub4" : 0,
+        "sub5" : 1,
+        "evidence" : 1
+    },
+    {
+        "evaluate": "Số lần được dự giờ trong năm ",
+        "sub0" : 1,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 0,
+        "evidence" : 1
+    },
+    {
+        "evaluate": "Số lần đi dự giờ trong năm ",
+        "sub0" : 1,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 0,
+        "evidence" : 1
+    },
+    {
+        "evaluate": "Số điểm trung bình đánh giá/kết quả được dự giờ trong năm ",
+        "sub0" : 1,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 0,
+        "evidence" : 1
+    },
+    {
+        "evaluate": "Kết quả khảo sát sự hài lòng của sinh viên ",
+        "sub0" : 1,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 0,
+        "evidence" : 1
+    },
+    {
+        "evaluate": "Số lượng đề cương, bài giảng cập nhật mới trong năm",
+        "sub0" : 1,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 0,
+        "evidence" : 0
+    },
+    {
+        "evaluate": "Số lần tổ chức học nhóm/ngoại khóa sinh hoạt chuyên đề môn học",
+        "sub0" : 1,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 0,
+        "evidence" : 0
+    },
+    {
+        "evaluate": "Ứng dụng sáng tạo các phương tiện dạy học vào bài giảng",
+        "sub0" : 1,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 0,
+        "evidence" : 1
+    },
+    {
+        "evaluate": "Kết quả đánh giá học tập của sinh viên",
+        "sub0" : 1,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 0,
+        "evidence" : 1
+    },
+    {
+        "evaluate": "Quản lý lớp học",
+        "sub0" : 1,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 0,
+        "evidence" : 0
+    },
+    {
+        "evaluate": "Định hướng nghề nghiệp cho sinh viên, liên hệ bài học với thực tiễn nghề nghiệp tương lai",
+        "sub0" : 1,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 0,
+        "evidence" : 1
+    }
+]

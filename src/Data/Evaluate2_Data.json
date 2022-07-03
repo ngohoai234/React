@@ -1,0 +1,52 @@
+[
+    {
+        "evaluate": "Số bài báo khoa học đăng trên các tạp chí khoa học có phản biện",
+        "sub0" : 0,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 1,
+        "evidence" : 1
+    },
+    {
+        "evaluate": "Số lần chủ trì hoặc phối hợp tổ chức các seminar, hội thảo chuyên đề trong lĩnh vực chuyên môn",
+        "sub0" : 1,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 1,
+        "evidence" : 1
+    },
+    {
+        "evaluate": "Số giáo trình hoặc tài liện giảng dạy biên soạn trong năm",
+        "sub0" : 1,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 1,
+        "evidence" : 1
+    },
+    {
+        "evaluate": "Số bài báo đăng nội san của trường",
+        "sub0" : 1,
+        "sub1" : 0,
+        "sub2" : 0,
+        "sub3" : 0,
+        "sub4" : 0,
+        "sub5" : 1,
+        "evidence" : 1
+    },
+    {
+        "evaluate": "Số sáng kiến, kinh nghiệm được ứng dụng ở trong và ngoài trường được công nhận",
+        "sub0" : 1,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 0,
+        "evidence" : 1
+    }
+]

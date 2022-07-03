@@ -1,0 +1,52 @@
+[
+    {
+        "evaluate": "Số lần tham gia các hoạt động ngoại khóa, học thuật, sinh hoạt chuyên môn của khoa",
+        "sub0" : 0,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 1,
+        "evidence" : 1
+    },
+    {
+        "evaluate": "Số lần tham gia vào việc đánh giá và phát triển chương trình đào tạo, tài liệu học tập của bộ môn, Khoa",
+        "sub0" : 1,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 1,
+        "evidence" : 1
+    },
+    {
+        "evaluate": "Số lần tham gia công tác tuyển sinh của Khoa/Trường",
+        "sub0" : 1,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 1,
+        "evidence" : 1
+    },
+    {
+        "evaluate": "Bí thư Khoa/Phó Bí thư đoàn Khoa/Chủ nghiệm CLB/Giữ vai trò chủ chốt trong sự kiện hoạt động của khoa",
+        "sub0" : 1,
+        "sub1" : 0,
+        "sub2" : 0,
+        "sub3" : 0,
+        "sub4" : 0,
+        "sub5" : 1,
+        "evidence" : 1
+    },
+    {
+        "evaluate": "Số làn tham gia các hoạt động khác khi được Khoa/Trường điều động",
+        "sub0" : 1,
+        "sub1" : 1,
+        "sub2" : 1,
+        "sub3" : 1,
+        "sub4" : 1,
+        "sub5" : 0,
+        "evidence" : 1
+    }
+]
