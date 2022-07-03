@@ -2,17 +2,17 @@
 
 export const API_URL = {
   // DUMMY WILL DELETE
-  SERVER: "https://jsonplaceholder.typicode.com",
+  SERVER: 'https://jsonplaceholder.typicode.com',
   COURSES: {
-    SEARCH: "",
+    SEARCH: '',
   },
   TODOS: {
-    SEARCH: "/todos",
+    SEARCH: '/todos',
   },
 };
 
 export const LIST_STATUS_ACTION = {
-  SUCCESS: "SUCCESS",
-  FAILED: "FAILED",
-  LOADING: "LOADING",
+  SUCCESS: 'SUCCESS',
+  FAILED: 'FAILED',
+  LOADING: 'LOADING',
 };
