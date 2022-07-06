@@ -1,0 +1,46 @@
+
+
+.content{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header{
+    text-align: center;
+  }
+  
+  .info{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .infomation{
+    width: 50%;
+    text-align: left;
+  }
+  
+  .upload{
+  
+    justify-content: center;
+  }
+  .table2 table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  
+  }
+  
+  .content1{
+    text-align: left;
+  }
+  
+  .none{
+    background-color: rgb(110, 106, 106);
+  }
+  
+  .check{
+    text-align: center;
+  }
+  
+  .result{
+    text-align: center;
+  }
