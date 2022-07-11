@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Todos from './pages/Todos/Todos';
 import Navbar from './Component/NavBar/NavBar';
 import Login from './pages/LoginForm/LoginForm';
@@ -10,18 +10,15 @@ import NotFound from './pages/NotFound/NotFound';
 const App = () => {
   return (
     <>
-      <BrowserRouter>
-        <Navbar />
-        <Switch>
-          <Route exact path={'/login'}>
-            <Login />
-          </Route>
-          <Route exact path="/Profile" component={<Profile />} />
-          <Route exact path="/Evaluate" component={<EvaluateForm />} />
-          <Route exact path="/History" component={<HistoryForm />} />
-          <Route path="*" component={NotFound}></Route>
-        </Switch>
-      </BrowserRouter>
+      <Router>
+        <Navbar/>
+        <Routes>
+          <Route exact path="/Profile" element={<Login/>} />
+          <Route exact path="/Evaluate" element={<EvaluateForm/>}/>
+          <Route exact path="/History" element={<HistoryForm/>}/>
+        </Routes>
+      </Router>
+      
     </>
   );
 };

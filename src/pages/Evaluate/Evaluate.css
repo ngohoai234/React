@@ -1,46 +1,50 @@
 
 
-.content{
+.evaluate .content{
   display: flex;
   justify-content: center;
 }
 
-.header{
+.evaluate .header{
   text-align: center;
 }
 
-.info{
+.evaluate .info{
   display: flex;
   justify-content: center;
 }
 
-.infomation{
+.evaluate .infomation{
   width: 50%;
   text-align: left;
 }
 
-.upload{
+.evaluate .upload{
 
   justify-content: center;
 }
-.table2 table, th, td {
+.evaluate .table2 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 
 }
 
-.content1{
+.evaluate .content1{
   text-align: left;
 }
 
-.none{
+.evaluate .none{
   background-color: rgb(110, 106, 106);
 }
 
-.check{
+.evaluate .check{
   text-align: center;
 }
 
-.result{
+.evaluate .result{
   text-align: center;
+}
+
+.evaluate .add{
+  color: width
 }

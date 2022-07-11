@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState} from "react";
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import '../Evaluate/Evaluate.css';
@@ -6,78 +6,54 @@ import '../Photo/logo_DNTU.png';
 import Data1 from '../../Data/Evaluate1_Data.json';
 import Data2 from '../../Data/Evaluate2_Data.json';
 import Data3 from '../../Data/Evaluate3_Data.json';
+import Data4 from '../../Data/PointData.json';
 import { Table, Button, Tag } from 'antd';
 
 class EvaluateForm extends React.Component {
-  payloadAll = [
-    {
-      name: 'Dntu1',
-      id: '1',
-    },
-    {
-      name: 'Dntu2',
-      id: '2',
-    },
-    {
-      name: 'Dntu3',
-      id: '3',
-    },
-    {
-      name: 'Dntu4',
-      id: '4',
-    },
-    {
-      name: 'Dntu5',
-      id: '5',
-    },
-  ];
-
-  state = {
-    task: { options: [1, 2, 3, 4, 5], extras: this.payloadAll },
-    selected: {},
+  sum;
+  state = {selected: {}};
+  num = [];
+  onSum = () => {
+    for (var key in Data4.info) {
+      //this.num.indexOf(Object.values(Data4.info[key]));
+      var value = Object.values(Data4.info[key]);
+      this.num.push(Number(value));
+    }
+    this.sum = this.num.reduce((a, v) => a = a + v, 0)
   };
-
-  onRadioChange = (e) => {
+  onRadioChange = e => {
     let name = e.currentTarget.name;
     let value = e.currentTarget.value;
+    //this.onSum();
     this.setState({
       ...this.state,
       selected: { ...this.state.selected, [name]: value },
     });
+    
   };
-
-  onSubmit = () => {
-    console.log(this.state.selected);
-    this.setState({
-      ...this.state,
-      selected: {},
-    });
+  
+  onSaveData = () =>{
+   
+    const selected = this.state.selected;
+    const config = { name: 'Duong', account: 'DuongNA5', selected};
+    let data = JSON.stringify(config);
+    console.log(JSON.parse(data));
   };
-
   render() {
-    let columns = [];
-    columns.push({
-      title: '',
-      dataIndex: 'name',
-      key: 'name',
-      width: '45vw',
-    });
-
-    let rowHeaders = [];
-    this.state.task.extras.forEach((extra, i) => {
-      rowHeaders.push({ name: `${extra.name}` });
-    });
-
     var row_count1 = 1;
     var row_count2 = 1;
     var row_count3 = 1;
+    var count = 1;
     return (
+      <div className="evaluate">
+        {JSON.stringify(this.state.selected)}
+        {JSON.stringify(this.num)}
       <div className="content">
         <div>
           <div className="header">
             <h3>
               Phiếu đánh giá năng lực giảng viên <br />
-              Năm học: 2022
+              Năm học: 2022 {this.sum}
             </h3>
           </div>
 
@@ -131,47 +107,53 @@ class EvaluateForm extends React.Component {
                     <td className="content1">{data.evaluate}</td>
                     <td title="Rất không đồng ý" className="check">
                       {data.sub0 == 1 ? (
-                        <input type="radio" value="vnk2" name="ksur27" id="kvote27_2" />
+                        <input type="radio" value={0} name={count}  id="kvote27_21"
+                        onChange={this.onRadioChange}/>
                       ) : (
                         <div className="none"></div>
                       )}
                     </td>
                     <td title="Không đồng ý" className="check">
                       {data.sub1 == 1 ? (
-                        <input type="radio" value="vnk2" name="ksur27" id="kvote27_2" />
+                        <input type="radio" value={1} name={count} id="kvote27_22"
+                        onChange={this.onRadioChange} />
                       ) : (
                         <div className="none"></div>
                       )}
                     </td>
                     <td title="Phân vân" className="check">
                       {data.sub2 == 1 ? (
-                        <input type="radio" value="vnk2" name="ksur27" id="kvote27_2" />
+                        <input type="radio" value={2} name={count} id="kvote27_23" 
+                        onChange={this.onRadioChange}/>
                       ) : (
                         <div className="none"></div>
                       )}
                     </td>
                     <td title="Đồng ý" className="check">
                       {data.sub3 == 1 ? (
-                        <input type="radio" value="vnk2" name="ksur27" id="kvote27_2" />
+                        <input type="radio" value={3} name={count} id="kvote27_24" 
+                        onChange={this.onRadioChange}/>
                       ) : (
                         <div className="none"></div>
                       )}
                     </td>
                     <td title="Hoàn toàn đồng ý" className="check">
                       {data.sub4 == 1 ? (
-                        <input type="radio" value="vnk2" name="ksur27" id="kvote27_2" />
+                        <input type="radio" value={4} name={count} id="kvote27_25" 
+                        onChange={this.onRadioChange}/>
                       ) : (
                         <div className="none"></div>
                       )}
                     </td>
                     <td title="Hoàn toàn đồng ý" className="check">
                       {data.sub5 == 1 ? (
-                        <input type="radio" value="vnk2" name="ksur27" id="kvote27_2" />
+                        <input type="radio" value={5} name={count} id="kvote27_26" 
+                        onChange={this.onRadioChange}/>
                       ) : (
                         <div className="none"></div>
                       )}
                     </td>
-                    <td></td>
+                    <td className="add"> {count++}</td>
                     <td></td>
                     <td className="upload">
                       {data.evidence == 1 ? (
@@ -198,47 +180,53 @@ class EvaluateForm extends React.Component {
                     <td className="content1">{data.evaluate}</td>
                     <td title="Rất không đồng ý" className="check">
                       {data.sub0 == 1 ? (
-                        <input type="radio" value="vnk2" name="ksur27" id="kvote27_2" />
+                        <input type="radio" value={0} name={count}  id="kvote27_21"
+                        onChange={this.onRadioChange}/>
                       ) : (
-                        <div></div>
+                        <div className="none"></div>
                       )}
                     </td>
                     <td title="Không đồng ý" className="check">
                       {data.sub1 == 1 ? (
-                        <input type="radio" value="vnk2" name="ksur27" id="kvote27_2" />
+                        <input type="radio" value={1} name={count} id="kvote27_22"
+                        onChange={this.onRadioChange} />
                       ) : (
-                        <div></div>
+                        <div className="none"></div>
                       )}
                     </td>
                     <td title="Phân vân" className="check">
                       {data.sub2 == 1 ? (
-                        <input type="radio" value="vnk2" name="ksur27" id="kvote27_2" />
+                        <input type="radio" value={2} name={count} id="kvote27_23" 
+                        onChange={this.onRadioChange}/>
                       ) : (
-                        <div></div>
+                        <div className="none"></div>
                       )}
                     </td>
                     <td title="Đồng ý" className="check">
                       {data.sub3 == 1 ? (
-                        <input type="radio" value="vnk2" name="ksur27" id="kvote27_2" />
+                        <input type="radio" value={3} name={count} id="kvote27_24" 
+                        onChange={this.onRadioChange}/>
                       ) : (
-                        <div></div>
+                        <div className="none"></div>
                       )}
                     </td>
                     <td title="Hoàn toàn đồng ý" className="check">
                       {data.sub4 == 1 ? (
-                        <input type="radio" value="vnk2" name="ksur27" id="kvote27_2" />
+                        <input type="radio" value={4} name={count} id="kvote27_25" 
+                        onChange={this.onRadioChange}/>
                       ) : (
-                        <div></div>
+                        <div className="none"></div>
                       )}
                     </td>
                     <td title="Hoàn toàn đồng ý" className="check">
                       {data.sub5 == 1 ? (
-                        <input type="radio" value="vnk2" name="ksur27" id="kvote27_2" />
+                        <input type="radio" value={5} name={count} id="kvote27_26" 
+                        onChange={this.onRadioChange}/>
                       ) : (
-                        <div></div>
+                        <div className="none"></div>
                       )}
                     </td>
-                    <td></td>
+                    <td> {count++}</td>
                     <td></td>
                     <td className="upload">
                       {data.evidence == 1 ? (
@@ -265,47 +253,53 @@ class EvaluateForm extends React.Component {
                     <td className="content1">{data.evaluate}</td>
                     <td title="Rất không đồng ý" className="check">
                       {data.sub0 == 1 ? (
-                        <input type="radio" value="vnk2" name="ksur27" id="kvote27_2" />
+                        <input type="radio" value={0} name={count}  id="kvote27_21"
+                        onChange={this.onRadioChange}/>
                       ) : (
-                        <div></div>
+                        <div className="none"></div>
                       )}
                     </td>
                     <td title="Không đồng ý" className="check">
                       {data.sub1 == 1 ? (
-                        <input type="radio" value="vnk2" name="ksur27" id="kvote27_2" />
+                        <input type="radio" value={1} name={count} id="kvote27_22"
+                        onChange={this.onRadioChange} />
                       ) : (
-                        <div></div>
+                        <div className="none"></div>
                       )}
                     </td>
                     <td title="Phân vân" className="check">
                       {data.sub2 == 1 ? (
-                        <input type="radio" value="vnk2" name="ksur27" id="kvote27_2" />
+                        <input type="radio" value={2} name={count} id="kvote27_23" 
+                        onChange={this.onRadioChange}/>
                       ) : (
-                        <div></div>
+                        <div className="none"></div>
                       )}
                     </td>
                     <td title="Đồng ý" className="check">
                       {data.sub3 == 1 ? (
-                        <input type="radio" value="vnk2" name="ksur27" id="kvote27_2" />
+                        <input type="radio" value={3} name={count} id="kvote27_24" 
+                        onChange={this.onRadioChange}/>
                       ) : (
-                        <div></div>
+                        <div className="none"></div>
                       )}
                     </td>
                     <td title="Hoàn toàn đồng ý" className="check">
                       {data.sub4 == 1 ? (
-                        <input type="radio" value="vnk2" name="ksur27" id="kvote27_2" />
+                        <input type="radio" value={4} name={count} id="kvote27_25" 
+                        onChange={this.onRadioChange}/>
                       ) : (
-                        <div></div>
+                        <div className="none"></div>
                       )}
                     </td>
                     <td title="Hoàn toàn đồng ý" className="check">
                       {data.sub5 == 1 ? (
-                        <input type="radio" value="vnk2" name="ksur27" id="kvote27_2" />
+                        <input type="radio" value={5} name={count} id="kvote27_26" 
+                        onChange={this.onRadioChange}/>
                       ) : (
-                        <div></div>
+                        <div className="none"></div>
                       )}
                     </td>
-                    <td></td>
+                    <td> {count++}</td>
                     <td></td>
                     <td className="upload">
                       {data.evidence == 1 ? (
@@ -325,10 +319,11 @@ class EvaluateForm extends React.Component {
             </table>
           </div>
           <div>
-            <img className="logo" src={require('../Photo/bietquyet.gif')} />
+            <img className="logo" src={require('../Photo/bietquyet.gif')} onClick={this.onSaveData}/>
           </div>
         </div>
       </div>
+    </div>
     );
   }
 }

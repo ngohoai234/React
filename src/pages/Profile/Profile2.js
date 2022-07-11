@@ -2,10 +2,11 @@ import React, { useState} from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import '../Profile/Profile.css'
+import '../Profile/Profile2.css'
 
 function Profile() {
     return (
+        <div className="profile">
         <div class="container">
 <div id="content" class="content p-0">
     <div class="profile-header">
@@ -190,6 +191,7 @@ function Profile() {
             </div>
         </div>
     </div>
+</div>
 </div>
 </div>
     );
