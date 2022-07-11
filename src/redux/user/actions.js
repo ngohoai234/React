@@ -1,15 +1,12 @@
-import {
-  GET_INFORMATIOIN_USER_REQUEST,
-  GET_INFORMATIOIN_USER_RESPONSE,
-} from "./constants";
+import { USER_LOGIN_REQUEST, USER_LOGIN_RESPONSE } from './constants';
 
-export const getInformationUserRequest = (data) => ({
-  type: GET_INFORMATIOIN_USER_REQUEST,
-  payload: data,
+export const loginRequest = (name, password) => ({
+  type: USER_LOGIN_REQUEST,
+  payload: { name, password },
 });
 
-export const getInformationUserResponse = (data, status, code, message) => ({
-  type: GET_INFORMATIOIN_USER_RESPONSE,
+export const loginResponse = (data, status, code, message) => ({
+  type: USER_LOGIN_RESPONSE,
   payload: {
     data,
     status,

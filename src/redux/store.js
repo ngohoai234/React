@@ -1,18 +1,18 @@
-import { applyMiddleware, compose, createStore } from "redux";
+import { applyMiddleware, compose, createStore } from 'redux';
 
-import { createInjectorsEnhancer } from "redux-injectors";
+import { createInjectorsEnhancer } from 'redux-injectors';
 
-import { routerMiddleware } from "react-router-redux";
+import { routerMiddleware } from 'react-router-redux';
 
-import { createBrowserHistory } from "history";
+import { createBrowserHistory } from 'history';
 
-import createSagaMiddleware from "redux-saga";
+import createSagaMiddleware from 'redux-saga';
 
-import { useSelector } from "react-redux";
+import { useSelector } from 'react-redux';
 
-import createReducer from "./rootReducer";
+import createReducer from './rootReducer';
 
-import rootSaga from "./user/saga";
+import rootSaga from './user/saga';
 
 const history = createBrowserHistory();
 
@@ -34,11 +34,7 @@ export default function configureStore(initialState) {
       runSaga,
     }),
   ];
-  const store = createStore(
-    createReducer(),
-    initialState,
-    composeEnhancers(...enhancers)
-  );
+  const store = createStore(createReducer(), initialState, composeEnhancers(...enhancers));
 
   sagaMiddleware.run(rootSaga);
 

@@ -1,30 +1,28 @@
-import { call, put, takeLatest } from "redux-saga/effects";
+import { call, put, takeLatest } from 'redux-saga/effects';
 
-import { GET_INFORMATIOIN_USER_REQUEST } from "./constants";
-import { getInformationUserResponse } from "./actions";
-import { axiosAPIInstance } from "../../lib/axiosRequest";
-import { API_URL, LIST_STATUS_ACTION } from "../rootConstant";
+import { USER_LOGIN_REQUEST } from './constants';
+import { loginResponse } from './actions';
+import axiosAPIInstance from '../../lib/axiosRequest';
+import { API_URL, LIST_STATUS_ACTION } from '../rootConstant';
 
-function* getInformationUserRequest(action) {
+function* loginRequest(action) {
   try {
     const res = yield call(
       async () =>
-        await axiosAPIInstance.get(API_URL.SERVER + API_URL.COURSES.SEARCH)
+        await axiosAPIInstance.post(API_URL.SERVER + API_URL.USER.LOGIN, {
+          tendangnhap: action.payload.name,
+          matkhau: action.payload.password,
+        })
     );
     yield put(
-      getInformationUserResponse(res?.data?.data, LIST_STATUS_ACTION.SUCCESS),
-      res.data.code,
-      res.data.message
+      loginResponse(res?.data?.data, LIST_STATUS_ACTION.SUCCESS, res.data.code, res.data.message)
     );
   } catch (error) {
-    yield put(
-      getInformationUserResponse(error, LIST_STATUS_ACTION.FAILED),
-      error?.code,
-      error.message
-    );
+    console.log(error, ' message');
+    yield put(loginResponse(error, LIST_STATUS_ACTION.FAILED, error?.status, error?.data?.message));
   }
 }
 
 export default function* rootSaga() {
-  yield takeLatest(GET_INFORMATIOIN_USER_REQUEST, getInformationUserRequest);
+  yield takeLatest(USER_LOGIN_REQUEST, loginRequest);
 }

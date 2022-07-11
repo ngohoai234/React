@@ -2,12 +2,9 @@
 
 export const API_URL = {
   // DUMMY WILL DELETE
-  SERVER: 'https://jsonplaceholder.typicode.com',
-  COURSES: {
-    SEARCH: '',
-  },
-  TODOS: {
-    SEARCH: '/todos',
+  SERVER: 'http://myway83-001-site1.itempurl.com/api',
+  USER: {
+    LOGIN: '/tai-khoan/dang-nhap',
   },
 };
 

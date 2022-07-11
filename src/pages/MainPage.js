@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from 'react';
 //import NavBar from '../Component/NavBar/NavBar';
 //import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Profile from '../pages/Profile/Profile2';
@@ -8,7 +8,7 @@ import Profile from '../pages/Profile/Profile2';
 
 function MainForm() {
   return (
-    <Profile/>
+    <Profile />
     // <>
     //   <Router>
     //     <NavBar/>
@@ -18,7 +18,7 @@ function MainForm() {
     //       <Route exact path="/History" element={<HistoryForm/>}/>
     //     </Routes>
     //   </Router>
-      
+
     // </>
   );
 }
