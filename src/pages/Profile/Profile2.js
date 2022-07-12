@@ -18,11 +18,11 @@ function Profile() {
               </div>
 
               <div className="profile-header-info">
-                <h4 className="m-t-sm">Clyde Stanley</h4>
-                <p className="m-b-sm">UXUI + Frontend Developer</p>
-                <a href="#" className="btn btn-xs btn-primary mb-3">
+                <h4 className="m-t-sm">Nguyễn Thị Liệu</h4>
+                <p className="m-b-sm">Giảng viên</p>
+                {/* <a href="#" className="btn btn-xs btn-primary mb-3">
                   Edit Profile
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -35,27 +35,24 @@ function Profile() {
                     <table className="table table-profile">
                       <thead>
                         <tr>
-                          <th colSpan="2">WORK AND EDUCATION</th>
+                          <th colSpan="2">CÔNG TÁC VÀ GIÁO DỤC</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td className="field">Work</td>
+                          <td className="field">Công việc</td>
                           <td className="value">
                             <div className="m-b-5">
-                              <b>DongNai Technology University (DNTU)</b> <br />
-                              <span className="text-muted">Teacher</span>
+                              <b>Đại Học Công Nghệ Đồng Nai (DNTU)</b> <br />
+                              <span className="text-muted">Giảng viên</span>
                             </div>
                           </td>
                         </tr>
-                        <tr>
+                        {/* <tr>
                           <td className="field">Education</td>
                           <td className="value">
                             <div className="m-b-5">
-                              <b>University (2009)</b>{' '}
-                              <a href="#" className="m-l-10">
-                                Edit
-                              </a>
+                              <b>University (2009)</b>{' '}                       
                               <br />
                               <span className="text-muted">University of Georgia, Athens, GA</span>
                             </div>
@@ -70,9 +67,15 @@ function Profile() {
                               </span>
                             </div>
                           </td>
-                        </tr>
+                        </tr> */}
                         <tr>
-                          <td className="field">Skills</td>
+                          <td className="field">Khoa công tác</td>
+                          <td className="value">
+                            Khoa công nghệ
+                          </td>
+                        </tr>                   
+                        <tr>
+                          <td className="field">Chứng chỉ</td>
                           <td className="value">
                             C++, PHP, HTML5, CSS, jQuery, MYSQL, Ionic, Laravel, Phonegap,
                             Bootstrap, Angular JS, Angular JS, Asp.net
@@ -83,95 +86,54 @@ function Profile() {
                     <table className="table table-profile">
                       <thead>
                         <tr>
-                          <th colSpanc="2">CONTACT INFORMATION</th>
+                          <th colSpanc="2">THÔNG TIN LIÊN HỆ</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td className="field">Mobile Phones</td>
+                          <td className="field">Số điện thoại</td>
                           <td className="value">
                             +44 7700 900860
-                            <a href="#" className="m-l-10">
-                              Edit
-                            </a>
                           </td>
                         </tr>
                         <tr>
                           <td className="field">Email</td>
                           <td className="value">
                             admin@infinite.com
-                            <a href="#" className="m-l-10">
-                              Edit
-                            </a>
                           </td>
                         </tr>
                         <tr>
-                          <td className="field">Facebook</td>
-                          <td className="value">
-                            http://facebook.com/infinite.admin
-                            <a href="#" className="m-l-10">
-                              Edit
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td className="field">Website</td>
-                          <td className="value">
-                            http://seantheme.com
-                            <a href="#" className="m-l-10">
-                              Edit
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td className="field">Address</td>
-                          <td className="value">Ho Chi Minh City</td>
+                          <td className="field">Địa chỉ</td>
+                          <td className="value">Ho Chi Minh</td>
                         </tr>
                       </tbody>
                     </table>
                     <table className="table table-profile">
                       <thead>
                         <tr>
-                          <th colSpanc="2">BASIC INFORMATION</th>
+                          <th colSpanc="2">THÔNG TIN CƠ BẢN</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td className="field">Birth of Date</td>
+                          <td className="field">Ngày sinh</td>
                           <td className="value">
                             November 4, 1989
-                            <a href="#" className="m-l-10">
-                              Edit
-                            </a>
                           </td>
                         </tr>
                         <tr>
                           <td className="field">Gender</td>
                           <td className="value">
                             Male
-                            <a href="#" className="m-l-10">
-                              Edit
-                            </a>
                           </td>
                         </tr>
                         <tr>
-                          <td className="field">Facebook</td>
+                          <td className="field">Email</td>
                           <td className="value">
-                            http://facebook.com/infinite.admin
-                            <a href="#" className="m-l-10">
-                              Edit
-                            </a>
+                            http://facebook.com/infinite.admin                      
                           </td>
                         </tr>
-                        <tr>
-                          <td className="field">Website</td>
-                          <td className="value">
-                            http://seantheme.com
-                            <a href="#" className="m-l-10">
-                              Edit
-                            </a>
-                          </td>
-                        </tr>
+                        
                       </tbody>
                     </table>
                   </div>
@@ -180,28 +142,29 @@ function Profile() {
 
               <div className="col-md-4 hidden-xs hidden-sm">
                 <ul className="profile-info-list">
-                  <li className="title">PERSONAL INFORMATION</li>
+                  <li className="title">THÔNG TIN CÁ NHÂN</li>
                   <li>
-                    <div className="field">Occupation:</div>
-                    <div className="value">UXUI / Frontend Developer</div>
+                    <div className="field">Nghề nghiệp:</div>
+                    <div className="value">Giảng viên</div>
                   </li>
                   <li>
-                    <div className="field">Skills:</div>
+                    <div className="field">Bằng cấp:</div>
                     <div className="value">
-                      C++, PHP, HTML5, CSS, jQuery, MYSQL, Ionic, Laravel, Phonegap, Bootstrap,
-                      Angular JS, Angular JS, Asp.net
+                    Đạt trình độ ngoại ngữ bậc 03 <br/>
+                    Đạt chuẩn kỹ năng sử dụng công nghệ thông tin cơ bản. <br/>
+                    Tốt nghiệp đại học sư phạm. <br/>
                     </div>
                   </li>
                   <li>
-                    <div className="field">Birth of Date:</div>
+                    <div className="field">Ngày sinh:</div>
                     <div className="value">1989/11/04</div>
                   </li>
                   <li>
-                    <div className="field">Country:</div>
+                    <div className="field">Quê quán:</div>
                     <div className="value">San Francisco</div>
                   </li>
                   <li>
-                    <div className="field">Address:</div>
+                    <div className="field">Địa chỉ:</div>
                     <div className="value">
                       <address className="m-b-0">
                         Twitter, Inc.
